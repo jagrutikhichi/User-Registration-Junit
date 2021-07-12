@@ -7,6 +7,9 @@ public class UserRegistration {
     public boolean validateFirstName(String fname) {
         return patternChecker(fname, NAME_PATTERN);
     }
+    public boolean validateLastName(String lName){
+        return patternChecker(lName, NAME_PATTERN);
+    }
 
     private boolean patternChecker(String input,String fieldPattern) {
         Pattern pattern = Pattern.compile(fieldPattern);
