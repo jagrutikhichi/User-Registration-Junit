@@ -53,5 +53,11 @@ public class UserRegistrationTest {
 	      boolean result = userRegistration.validateFirstName("Kh!ch!");
 	      Assert.assertFalse(result);
 	  }
+	  
+	  @Test
+	    public void givenEmailId_WhenProper_ShouldReturnTrue(){
+	        boolean result = userRegistration.valudateEmailId("abc.syz@bl.co.in");
+	        Assert.assertTrue(result);
+	    }
 
 }
