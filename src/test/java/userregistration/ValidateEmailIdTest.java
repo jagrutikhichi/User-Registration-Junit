@@ -38,7 +38,7 @@ public class ValidateEmailIdTest {
 					{ "abc@gmail.com.aa.au", false } });
 		}
 		@Test
-		public void givenEmailIds_WhenProper_ShouldReturnExpectedResult() {
+		public void givenEmailIds_WhenProper_ShouldReturnExpectedResult() throws UserRegistrationException {
 			boolean result = userRegistration.validateEmailId(emailId);
 			Assert.assertEquals(this.expectedResult, userRegistration.validateEmailId(emailId));
 		}
